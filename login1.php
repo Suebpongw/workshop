@@ -21,7 +21,7 @@
 			
 		//	if($objResult["Status"] == "ADMIN")
 			//{
-				header("location:admin.php");
+				header("location:admin.html");
 		//	}
 		//	else
 			//{

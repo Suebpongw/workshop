@@ -1,0 +1,45 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv=Content-Type content="text/html; charset=tis-620">
+</head>
+<body>
+<?php
+  
+  <br><center>Welcome admin!!</center><br>
+  
+  <table width="100%" height="100%" bgcolor="green" border="1">
+    <tr>
+      <td><center>Message form friend</center></td>
+      <td><center>Send message to friend</center></td>
+   
+    </tr>
+	<tr>
+	   <td>
+	   <center><form action="" method="post" name="form1">
+	     <textarea name="txtDescription" cols="50" rows="20"></textarea>
+          </form></center>
+	   </td>
+	   <td>
+
+	   <center><form action="addmessage.php" method="post" name="form1">
+	      Who ?? <br>
+            <select name="lmName1" >
+	          <option value="Toomtam">Toomtam</option>
+              <option value="Champ">Champ</option>
+              <option value="Mint">Mint</option>
+            </select>
+          <hr>
+          <textarea name="txtDescription" cols="50" rows="20"></textarea>
+          <input name="btnSubmit" type="submit" value="Send">
+          </form></center>
+	   </td>
+	   
+    </tr>
+       
+  </table>
+  
+    
+
+</body>
+</html>
