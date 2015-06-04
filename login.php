@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>Jame's server</title>
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="">
+<center>Jame 's server</center>
+<form id="form1" name="form1" method="post" action="login1.php">
   <label>Username
   <input type="text" name="username" id="username" />
   <br />
