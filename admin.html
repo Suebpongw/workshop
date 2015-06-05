@@ -5,6 +5,7 @@
 </head>
 <body>
 <?php
+   
   
   <br><center>Welcome admin!!</center><br>
   
@@ -18,17 +19,20 @@
 	   <td>
 	   <center><form action="" method="post" name="form1">
 	     <textarea name="txtDescription" cols="50" rows="20"></textarea>
+		  <?php header(location:showmessage.php"); ?>
           </form></center>
 	   </td>
 	   <td>
 
-	   <center><form action="addmessage.php" method="post" name="form1">
+	   <center><form action="ProcessSend.php" method="post" name="form1">
 	      Who ?? <br>
-            <select name="lmName1" >
+		  ผู้รับ<input type="text" name="lmName1" >
+		  ผู้ส่ง<input type="text" name="form" value="Jame">
+            <!--<select name="lmName1" >
 	          <option value="Toomtam">Toomtam</option>
               <option value="Champ">Champ</option>
               <option value="Mint">Mint</option>
-            </select>
+            </select>*/-->
           <hr>
           <textarea name="txtDescription" cols="50" rows="20"></textarea>
           <input name="btnSubmit" type="submit" value="Send">
