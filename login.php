@@ -6,8 +6,8 @@
 </head>
 
 <body>
-<center>Jame 's server</center>
-<form id="form1" name="form1" method="post" action="login1.php">
+<center>Jame 's server</center><br>
+<center><form id="form1" name="form1" method="post" action="login1.php">
   <label>Username
   <input type="text" name="username" id="username" />
   <br />
@@ -19,6 +19,6 @@
     <input type="submit"  id="login" value="Login" />
     </label>
   </p>
-</form>
+</form></center>
 </body>
 </html>
