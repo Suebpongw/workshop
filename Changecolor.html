@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+div {  width:1335px; height:145px; margin:5px; float:center;}
+p {  width:1330px; height:100px; margin:5px; float:center;}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function (){
+	
+	$("#num").on("keyup" , function (event) {
+		//alert(event.keyCode);
+		//var code = e.keyCode ? e.keyCode : e.which;
+
+		/*if(code == ''){
+		    $("#head").css("backgroundColor","white");
+		    $("#one").css("backgroundColor","white");
+			$("#two").css("backgroundColor","white");
+			$("#three").css("backgroundColor","white");
+			$("#form").css("backgroundColor","white");
+		}
+		
+		else*/ //if(event.keyCode > 57 || event.keyCode < 48 && event.keyCode != 8){
+			//return false;
+			//alert('Yes');
+		if($("#num").val()*1!=0){
+			$("#one").css("backgroundColor","red");
+			$("#two").css("backgroundColor","red");
+			$("#three").css("backgroundColor","red");
+			$("#form").css("backgroundColor","red");
+			$("#head").css("backgroundColor","red");
+            $("#num").css("backgroundColor","red");
+		
+
+		}/*else if(code < 48 && code != 8){
+			//return false;
+			//alert('No');
+			$("#one").css("backgroundColor","white");
+		    $("#two").css("backgroundColor","white");
+			$("#three").css("backgroundColor","white");
+			$("#form").css("backgroundColor","red");
+			$("#head").css("backgroundColor","red");
+		}*/
+		
+	});
+	$('#num').keyup(function (){
+     
+    var num = $("#num").val()
+	  if($("#num").val()==""){
+	     $("#head").css("backgroundColor","white");
+		 $("#one").css("backgroundColor","white");
+		 $("#two").css("backgroundColor","white");
+		 $("#three").css("backgroundColor","white");
+		 $("#form").css("backgroundColor","white");
+		 $("#num").css("backgroundColor","white");
+	  }
+
+	  else if(num%3==0){
+	     $("#head").css("backgroundColor","white");
+	     $("#one").css("backgroundColor","green");
+		 $("#two").css("backgroundColor","yellow");
+		 $("#three").css("backgroundColor","green");
+		 $("#num").css("backgroundColor","white");
+		 $("#form").css("backgroundColor","white");
+	    //alert('0');
+	  }
+	  else if(num%3==1){
+	     $("#head").css("backgroundColor","white");
+	     $("#one").css("backgroundColor","yellow");
+		 $("#two").css("backgroundColor","green");
+		 $("#three").css("backgroundColor","yellow");
+		 $("#num").css("backgroundColor","white");
+		 $("#form").css("backgroundColor","white");
+	    //alert('1');
+	  }
+	  else if(num%3==2){
+	     $("#head").css("backgroundColor","white");
+	     $("#one").css("backgroundColor","white");
+		 $("#two").css("backgroundColor","white");
+		 $("#three").css("backgroundColor","white");
+		 $("#num").css("backgroundColor","white");
+		 $("#form").css("backgroundColor","white");
+	     //alert('2');
+	  }
+	  /*else if(num==''){
+	     alert(num);
+	     $("#head").css("backgroundColor","white");
+		 $("#one").css("backgroundColor","white");
+			$("#two").css("backgroundColor","white");
+			$("#three").css("backgroundColor","white");
+			$("#form").css("backgroundColor","white");
+			//return false;
+	  }*/
+	  });
+
+});
+//style="color:red;background:red"
+</script>
+</head>
+
+<body>
+<!--<div id=head><center><B>Error</B></center></div>-->
+<center><p id=head style="color:white;background:white"><B>Error!! Plese input number.</B></p></center>
+<center><form action="" method="get"  id=form>
+    
+	<input name="" type="text" id="num" ></center>
+    <br>
+	<br>
+</form>
+<!--<script>
+$('#num').keydown(function (){
+     
+    var num = $("#num").val()
+	  alert(num);
+});
+</script>-->
+<div id=one></div>
+
+<div id=two></div>
+
+<div id=three></div>
+
+</body>
+</html>
